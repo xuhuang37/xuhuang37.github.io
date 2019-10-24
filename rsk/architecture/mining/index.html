@@ -7,8 +7,8 @@
    <meta name="description"
       content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
    <meta name="author" content="RSK Developers Portal">
-   <link rel="canonical" href="https://xuhuang37.github.io/404.html">
-   <title> - RSK Developers Portal</title>
+   <link rel="canonical" href="https://xuhuang37.github.io/rsk/architecture/mining/">
+   <title>Merged Mining - RSK Developers Portal</title>
 
    <!-- Favicons -->
    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
@@ -401,8 +401,16 @@
 		
 		
 		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-			<span property="name"></span>
-			<meta property="position" content="2" />
+			<a property="item" typeof="WebPage" href="/rsk/">
+				<span property="name">RSK Blockchain</span>
+				<meta property="position" content="2" />
+			</a>
+		</li>
+		
+		
+		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<span property="name">Merged Mining</span>
+			<meta property="position" content="3" />
 		</li>
 		
 
@@ -416,7 +424,16 @@
   
   <ol>
     
-    <li><a href="/">home</a> &nbsp; </li>
+    <li><a href="/">home</a> &#187; </li>
+
+    
+    
+    
+
+    <li><a href="/rsk">rsk</a> &#187; </li>
+
+    
+    
     
   </ol>
 </div>
@@ -735,29 +752,29 @@
             <div class="col-lg-9 main-central-col">
                <div class="page-metadata">
                   <time role="presentation"
-                     datetime="2019-08-27 23:48:57 +0800T00:00:00.000Z">2019-08-27</time>
+                     datetime="2019-10-16 18:52:46 +0800T00:00:00.000Z">2019-10-16</time>
                   |
                   
-                  1 minutes to read |
-                  <a href="https://github.com/xuhuang37/xuhuang37.github.io/edit/master/404.html">Edit</a> |
+                  2 minutes to read |
+                  <a href="https://github.com/xuhuang37/xuhuang37.github.io/edit/master/rsk/architecture/mining/index.md">Edit</a> |
                   <div class="dropdown" style="display: inline-block">
                      <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="true">Share</a>
                      <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
                         <li><a class="share-twitter" data-bi-name="twitter"
-                              href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fxuhuang37.github.io/404.html&amp;text=&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fxuhuang37.github.io/rsk/architecture/mining/&amp;text=Merged Mining&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fxuhuang37.github.io/rsk/architecture/mining/"><span
                                  class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
                         <li><a class="share-linkedin" data-bi-name="linkedin"
-                              href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fxuhuang37.github.io/rsk/architecture/mining/"><span
                                  class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
                         <li><a class="share-facebook" data-bi-name="facebook"
-                              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fxuhuang37.github.io/rsk/architecture/mining/"><span
                                  class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
                         <li><a class="share-email" data-bi-name="email"
-                              href="mailto:?subject=&amp;body=%0A%0Ahttps%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="mailto:?subject=Merged Mining&amp;body=Merged Mining%0A%0Ahttps%3A%2F%2Fxuhuang37.github.io/rsk/architecture/mining/"><span
                                  class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
                         <li><a class="share-link" data-bi-name="link" href="#"
-                              onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://xuhuang37.github.io/404.html').select();document.execCommand('copy');$(el).remove(); return false;"><span
+                              onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://xuhuang37.github.io/rsk/architecture/mining/').select();document.execCommand('copy');$(el).remove(); return false;"><span
                                  class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
                      </ul>
                   </div> |
@@ -765,12 +782,40 @@
                      onclick="$('body').toggleClass('dark');if($(this).text() ==='Dark'){$(this).text('Light')}else{$(this).text('Dark')} return false;">Dark</a>
                </div>
 
-               <h1 class="page-title"></h1>
+               <h1 class="page-title">Merged Mining</h1>
 
-               <h1>404</h1>
+               <p>Merged mining is the process that allows RSK blockchain to be mined simultaneously with Bitcoin blockchain. This can be done because both chains use the same PoW algorithm (double SHA-256).</p>
 
-<p><strong>Page not found</strong></p>
-<p>The requested page could not be found.</p>
+<h2 id="how-it-works">How it works?</h2>
+
+<p>Bitcoin mining pools include a reference to RSK’s block in every mining job they deliver to miners. 
+Everytime miners find a solution, it is compared to both networks difficulties (Bitcoin and RSK) delivering three possible outcomes:</p>
+<ul>
+  <li>Solution satisfies Bitcoin network difficulty. Hence, a block is assembled and sent to the network. RSK’s merged mining reference will be included and ignored by Bitcoin network. Since RSK’s network difficulty is lower than Bitcoin, this solution will also work for RSK and can be submitted to the network.</li>
+  <li>Solution does not satisfies Bitcoin network difficulty but does satisfy RSK network difficulty. As a consequence, solution will be submitted to RSK network and not to Bitcoin network.</li>
+  <li>Solution only satisfies pool difficulty (which is many times lower than Bitcoin or RSK network difficulty) and it is not submitted to any network.</li>
+</ul>
+
+<p>Solution submitted to RSK allows the node to build an SPV proof. If the proof is valid, it is included as part of the block that will be sent to the network.</p>
+
+<h2 id="what-are-the-benefits">What are the benefits?</h2>
+
+<p>Miners earn a high percentage of transaction fees from the RSK block they mine. This mining process is done with the same hashing power used in Bitcoin mining and has no additional cost or impact.</p>
+
+<h2 id="whats-the-current-rsk-network-hashing-power">What’s the current RSK network hashing power?</h2>
+
+<p>You can see RSK network hashing power in our <a href="https://stats.rsk.co">Stats Website</a>.</p>
+
+<h2 id="implementation-details-for-mining-software-pools">Implementation details for mining software pools</h2>
+
+<p>Check our <a href="/rsk/architecture/mining/implementation-guide">implementation guide</a>.</p>
+
+<h2 id="references">References:</h2>
+<ul>
+  <li><a href="/rsk/architecture/mining/reference">Merged-mining</a></li>
+  <li><a href="/rsk/architecture/mining/remasc">REMASC</a></li>
+  <li><a href="/rsk/architecture/mining/implementation-guide">Implementation guide</a></li>
+</ul>
 
 
             </div>

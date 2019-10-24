@@ -7,8 +7,8 @@
    <meta name="description"
       content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
    <meta name="author" content="RSK Developers Portal">
-   <link rel="canonical" href="https://xuhuang37.github.io/404.html">
-   <title> - RSK Developers Portal</title>
+   <link rel="canonical" href="https://xuhuang37.github.io/rsk/node/configure/">
+   <title>Configure - RSK Developers Portal</title>
 
    <!-- Favicons -->
    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
@@ -401,8 +401,24 @@
 		
 		
 		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-			<span property="name"></span>
-			<meta property="position" content="2" />
+			<a property="item" typeof="WebPage" href="/rsk/">
+				<span property="name">RSK Blockchain</span>
+				<meta property="position" content="2" />
+			</a>
+		</li>
+		
+		
+		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<a property="item" typeof="WebPage" href="/rsk/node/">
+				<span property="name">Node (RSKJ)</span>
+				<meta property="position" content="3" />
+			</a>
+		</li>
+		
+		
+		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<span property="name">Configure</span>
+			<meta property="position" content="4" />
 		</li>
 		
 
@@ -416,7 +432,16 @@
   
   <ol>
     
-    <li><a href="/">home</a> &nbsp; </li>
+    <li><a href="/">home</a> &#187; </li>
+
+    
+    
+    
+
+    <li><a href="/rsk">rsk</a> &#187; </li>
+
+    
+    
     
   </ol>
 </div>
@@ -735,29 +760,29 @@
             <div class="col-lg-9 main-central-col">
                <div class="page-metadata">
                   <time role="presentation"
-                     datetime="2019-08-27 23:48:57 +0800T00:00:00.000Z">2019-08-27</time>
+                     datetime="2019-10-15 21:13:21 +0800T00:00:00.000Z">2019-10-15</time>
                   |
                   
-                  1 minutes to read |
-                  <a href="https://github.com/xuhuang37/xuhuang37.github.io/edit/master/404.html">Edit</a> |
+                  10 minutes to read |
+                  <a href="https://github.com/xuhuang37/xuhuang37.github.io/edit/master/rsk/node/configure.md">Edit</a> |
                   <div class="dropdown" style="display: inline-block">
                      <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="true">Share</a>
                      <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
                         <li><a class="share-twitter" data-bi-name="twitter"
-                              href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fxuhuang37.github.io/404.html&amp;text=&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fxuhuang37.github.io/rsk/node/configure/&amp;text=Configure&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fxuhuang37.github.io/rsk/node/configure/"><span
                                  class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
                         <li><a class="share-linkedin" data-bi-name="linkedin"
-                              href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fxuhuang37.github.io/rsk/node/configure/"><span
                                  class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
                         <li><a class="share-facebook" data-bi-name="facebook"
-                              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fxuhuang37.github.io/rsk/node/configure/"><span
                                  class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
                         <li><a class="share-email" data-bi-name="email"
-                              href="mailto:?subject=&amp;body=%0A%0Ahttps%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="mailto:?subject=Configure&amp;body=Configure%0A%0Ahttps%3A%2F%2Fxuhuang37.github.io/rsk/node/configure/"><span
                                  class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
                         <li><a class="share-link" data-bi-name="link" href="#"
-                              onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://xuhuang37.github.io/404.html').select();document.execCommand('copy');$(el).remove(); return false;"><span
+                              onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://xuhuang37.github.io/rsk/node/configure/').select();document.execCommand('copy');$(el).remove(); return false;"><span
                                  class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
                      </ul>
                   </div> |
@@ -765,12 +790,390 @@
                      onclick="$('body').toggleClass('dark');if($(this).text() ==='Dark'){$(this).text('Light')}else{$(this).text('Dark')} return false;">Dark</a>
                </div>
 
-               <h1 class="page-title"></h1>
+               <h1 class="page-title">Configure</h1>
 
-               <h1>404</h1>
+               <h3 id="index">Index</h3>
+<ul>
+  <li><a href="#peer">peer</a></li>
+  <li><a href="#database">database</a></li>
+  <li><a href="#vm">vm</a></li>
+  <li><a href="#sync">sync</a></li>
+  <li><a href="#rpc">rpc</a></li>
+  <li><a href="#wallet">wallet</a></li>
+  <li><a href="#scoring">scoring</a></li>
+  <li><a href="#miner">miner</a></li>
+  <li><a href="#blockchainconfigname">blockchain.config.name</a></li>
+  <li><a href="#bind_address">bind_address</a></li>
+  <li><a href="#publicip">public.ip</a></li>
+  <li><a href="#genesis">genesis</a></li>
+  <li><a href="#transactionoutdated">transaction.outdated</a></li>
+  <li><a href="#playvm">play.vm</a></li>
+  <li><a href="#phrase">hello.phrase</a></li>
+  <li><a href="#detailsinmemorystoragelimit">details.inmemory.storage.limit</a></li>
+  <li><a href="#solcpath">solc.path</a></li>
+  <li><a href="#prune">prune</a></li>
+</ul>
 
-<p><strong>Page not found</strong></p>
-<p>The requested page could not be found.</p>
+<h2 id="peer">peer</h2>
+<p>Describes how your node peers other nodes.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">peer.discovery.enabled = [true/false]</code> enables the possibility of being discovered by new peers.</li>
+  <li><code class="highlighter-rouge">peer.discovery.ip.list = []</code> is a list of the peer to start the discovering. These peers must have the <code class="highlighter-rouge">discovery.enabled</code> option set to true. These are the list of some of RSK bootstrap nodes:</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Network</th>
+      <th><code class="highlighter-rouge">ip.list</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TestNet</td>
+      <td><code class="highlighter-rouge">"bootstrap02.testnet.rsk.co:50505","bootstrap03.testnet.rsk.co:50505","bootstrap04.testnet.rsk.co:50505","bootstrap05.testnet.rsk.co:50505"</code></td>
+    </tr>
+    <tr>
+      <td>MainNet</td>
+      <td><code class="highlighter-rouge">"bootstrap01.rsk.co:5050","bootstrap02.rsk.co:5050","bootstrap03.rsk.co:5050","bootstrap04.rsk.co:5050","bootstrap05.rsk.co:5050","bootstrap06.rsk.co:5050","bootstrap07.rsk.co:5050","bootstrap08.rsk.co:5050","bootstrap09.rsk.co:5050","bootstrap10.rsk.co:5050","bootstrap11.rsk.co:5050","bootstrap12.rsk.co:5050","bootstrap13.rsk.co:5050","bootstrap14.rsk.co:5050","bootstrap15.rsk.co:5050","bootstrap16.rsk.co:5050"</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><code class="highlighter-rouge">peer.active = []</code> is used to connect to specific nodes. It can be empty.</li>
+  <li><code class="highlighter-rouge">peer.trusted = []</code> is a list of peers whose incoming connections are always accepted from. It can be empty.</li>
+  <li><code class="highlighter-rouge">peer.port</code> is the port used to listen to incoming connections. Default port by each RSK network:</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Network</th>
+      <th><code class="highlighter-rouge">peer.port</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Regtest</td>
+      <td>30305</td>
+    </tr>
+    <tr>
+      <td>TestNet</td>
+      <td>50505</td>
+    </tr>
+    <tr>
+      <td>MainNet</td>
+      <td>5050</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><code class="highlighter-rouge">peer.connection.timeout = number (seconds)</code> defines <em>in seconds</em> the timeout for trying to connect to a peer. Suggested value: <code class="highlighter-rouge">2</code>.</li>
+  <li><code class="highlighter-rouge">channel.read.timeout = number (seconds)</code> specifies how much time you will wait for a message to come before closing the channel. Suggested value: <code class="highlighter-rouge">30</code>.</li>
+  <li><code class="highlighter-rouge">peer.privateKey = hash</code> a securely generated private key unique for your node that <strong>must</strong> be set.</li>
+  <li><code class="highlighter-rouge">peer.networkId = int</code> is the number of the network to connect to. It’s important to mantain these numbers. It identifies the network you are going to connect to. For a regtest private network, you should use always the same (not necessary 34567). RSK networks Ids:</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Network</th>
+      <th><code class="highlighter-rouge">peer.networkId</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Regtest</td>
+      <td>34567</td>
+    </tr>
+    <tr>
+      <td>TestNet</td>
+      <td>779</td>
+    </tr>
+    <tr>
+      <td>MainNet</td>
+      <td>775</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">peer.maxActivePeers = int</code> is the max number of active peers that your node will maintain. Suggested value: <code class="highlighter-rouge">30</code>.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">peer.p2p.eip8 = bool</code> forces peer to send handshake message in format defined by <a href="https://github.com/ethereum/EIPs/blob/master/EIPS/eip-8.md">EIP-8</a>.</p>
+  </li>
+</ul>
+
+<h2 id="database">database</h2>
+<p>Describes where the blockchain  database is saved.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">database.dir = path</code> is the place to save physical storage files.</li>
+  <li><code class="highlighter-rouge">database.reset = [true/false]
+</code> resets de database when application starts if it is set to <em>true</em>.</li>
+</ul>
+
+<h2 id="vm">vm</h2>
+<p>Enabling de <code class="highlighter-rouge">vm.structured</code> will log all the calls to the VM in the local database, this means, all the contract executions (opcodes).
+When testing, using this module is the only way to see Exceptions.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">trace = [true/false]</code> enables the <code class="highlighter-rouge">vm.structured</code>.</li>
+  <li><code class="highlighter-rouge">dir = foldername</code> the directory where calls are saved.</li>
+  <li><code class="highlighter-rouge">compressed = [true/false]</code> compress data when enabled. 
+<code class="highlighter-rouge">initStorageLimit = int</code> the storage limit.</li>
+</ul>
+
+<p>An example:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vm.structured {
+    trace = false
+    dir = vmtrace
+    compressed = true
+    initStorageLimit = 10000
+}
+</code></pre></div></div>
+
+<h2 id="sync">sync</h2>
+<p>Options related to syncing the blockchain:</p>
+<ul>
+  <li><code class="highlighter-rouge">sync.enabled = [true/false]</code> enables the blockchain synchronization. Should be set to <code class="highlighter-rouge">true</code> to keep the node updated.</li>
+  <li><code class="highlighter-rouge">sync.max.hashes.ask = int</code> determines the max amount of blocks to sync in a same batch. The synchronization is done in batches of blocks. Suggested value: <code class="highlighter-rouge">10000</code>.</li>
+  <li><code class="highlighter-rouge">sync.peer.count = int</code> minimum peers count used in syncing. Sync may use more peers than this value but always trying to get at least this number from discovery. However, it will continue syncing if it’s not reached.</li>
+  <li><code class="highlighter-rouge">sync.timeoutWaitingPeers = int (seconds)</code> timeout to start to wait for syncing requests.</li>
+  <li><code class="highlighter-rouge">sync.timeoutWaitingRequests = int (seconds)</code> expiration time in minutes for peer status.</li>
+  <li><code class="highlighter-rouge">sync.maxSkeletonChunks = int</code> maximum amount of chunks included in a skeleton message.</li>
+  <li><code class="highlighter-rouge">sync.shunkSize = int</code> amount of blocks contained in a chunk, <strong>must be</strong> <code class="highlighter-rouge">192</code> or a <code class="highlighter-rouge">divisor of 192</code>.</li>
+</ul>
+
+<p>An example:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sync {
+    enabled = true
+    max.hashes.ask = 10000
+    peer.count = 10
+    expectedPeers = 5
+    timeoutWaitingPeers = 1
+    timeoutWaitingRequest = 30
+    expirationTimePeerStatus = 10
+    maxSkeletonChunks = 20
+    chunkSize = 192
+}
+</code></pre></div></div>
+
+<h2 id="rpc">rpc</h2>
+<p>Describes the configuration for the RPC protocol.</p>
+<ul>
+  <li><code class="highlighter-rouge">rpc.providers = []</code> lists the different providers (up to this moment, just <code class="highlighter-rouge">web</code>). <code class="highlighter-rouge">rpc.providers.web</code> has a global setting for every web provider, <code class="highlighter-rouge">cors</code>.
+    <ul>
+      <li><code class="highlighter-rouge">rpc.providers.web.cors = domain</code> restricts the RPC calls from other domains. Default value is <code class="highlighter-rouge">localhost</code>.</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">rpc.providers.web</code> options:
+    <ul>
+      <li><code class="highlighter-rouge">rpc.providers.web.http</code> defines http configuration:
+        <ul>
+          <li><code class="highlighter-rouge">rpc.providers.web.http.enabled = [true/false]</code> enables this web provider. Default value is <code class="highlighter-rouge">true</code>.</li>
+          <li><code class="highlighter-rouge">rpc.providers.web.http.port = port</code> is the HTTP-RPC server listening port. By default RSK uses <code class="highlighter-rouge">4444</code>.</li>
+          <li><code class="highlighter-rouge">rpc.providers.web.http.bind_address = address</code> is the HTTP-RPC server listening interface. By default RSK uses <code class="highlighter-rouge">localhost</code>.</li>
+          <li><code class="highlighter-rouge">rpc.providers.web.http.hosts = []</code> is the list of node’s domain names or IPs. Check <a href="https://en.wikipedia.org/wiki/Hostname#Restrictions_on_valid_host_names">restrictions on valid host names</a>.</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">rpc.providers.web.ws</code> defines web sockets configuration:
+        <ul>
+          <li><code class="highlighter-rouge">rpc.providers.web.ws.enabled = [true/false]</code> enables this web provider. Default value is <code class="highlighter-rouge">true</code>.</li>
+          <li><code class="highlighter-rouge">rpc.providers.web.ws.port = port</code> is the WS-RPC server listening port. By default RSK uses <code class="highlighter-rouge">4445</code>.</li>
+          <li><code class="highlighter-rouge">rpc.providers.web.ws.bind_address = address</code> is the WS-RPC server listening interface. By default RSK uses <code class="highlighter-rouge">localhost</code>.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">rpc.modules</code> lists of different RPC modules. If a module is not in the list and enabled, its RPC calls are discard.
+Examples:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>modules = [
+  { name: "eth", version: "1.0", enabled: "true" },
+  { name: "net", version: "1.0", enabled: "true" },
+  { name: "rpc", version: "1.0", enabled: "true" },
+  { name: "web3", version: "1.0", enabled: "true" },
+  { name: "evm", version: "1.0", enabled: "true" },
+  { name: "sco", version: "1.0", enabled: "true" },
+  { name: "txpool", version: "1.0", enabled: "true" },
+  { name: "personal", version: "1.0", enabled: "true" }
+]
+</code></pre></div>    </div>
+    <p>It is possible to enable/disable particular methods in a module.</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  name: "evm",
+  version: "1.0",
+  enabled: "true",
+  methods: {
+      enabled: ["evm_snapshot", "evm_revert"],
+      disabled: [ "evm_reset", "evm_increaseTime"]
+  }
+}
+</code></pre></div>    </div>
+    <p>RSK has implemented an RPC <a href="JSON-RPC-API">miner module</a>. To use it, you have to include:</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{ name: "mnr", version: "1.0", enabled: "true" }
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="wallet">wallet</h2>
+<p>You can store your accounts on the node to use them to sign transactions. However, it is not secure to use a wallet in a public node.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wallet {
+    enabled = true
+    accounts = [
+        {
+            "publicKey" : "&lt;PUBLIC_KEY&gt;"
+            "privateKey" : "&lt;PRIVATE_KEY&gt;"
+        }
+    ]
+}
+</code></pre></div></div>
+
+<h2 id="scoring">scoring</h2>
+<p>Scoring is the way the node ‘punishes’ other nodes when bad responses are sent. Punishment can be done by node id or address.</p>
+<ul>
+  <li><code class="highlighter-rouge">scoring.nodes.number = int</code> number of nodes to keep scoring.</li>
+  <li><code class="highlighter-rouge">scoring.nodes.duration</code> and <code class="highlighter-rouge">scoring.addresses.duration</code> initial punishment duration (in minutes). Default is <code class="highlighter-rouge">10</code>.</li>
+  <li><code class="highlighter-rouge">scoring.nodes.increment</code> and <code class="highlighter-rouge">scoring.addresses.increment</code> punishment duration increment (in percentage). Default is <code class="highlighter-rouge">10</code>.</li>
+  <li><code class="highlighter-rouge">scoring.nodes.maximum</code> maximum punishment duration (in minutes). Default is <code class="highlighter-rouge">0</code>.</li>
+  <li><code class="highlighter-rouge">scoring.addresses.maximum</code> maximum punishment duration (in minutes). Default is <code class="highlighter-rouge">1 week</code>.</li>
+</ul>
+
+<p>An example:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scoring {
+    nodes {
+        number: 100
+        duration: 12
+        increment: 10
+        maximum: 0
+    }
+    addresses {
+        duration: 12
+        increment: 10
+        maximum: 6000
+    }
+}
+</code></pre></div></div>
+<h2 id="miner">miner</h2>
+<p>For more information about configuring RSK node to mine go <a href="https://github.com/rsksmart/rskj/wiki/Configure-your-RSK-node-to-be-used-from-a-merge-mining-pool">here</a>.</p>
+
+<h2 id="blockchainconfigname">blockchain.config.name</h2>
+<p>It is a string that describe the name of the configuration.
+We use:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Network</th>
+      <th><code class="highlighter-rouge">blockchain.config.name</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Regtest</td>
+      <td>regtest</td>
+    </tr>
+    <tr>
+      <td>TestNet</td>
+      <td>testnet</td>
+    </tr>
+    <tr>
+      <td>MainNet</td>
+      <td>main</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="bind_address">bind_address</h2>
+<p>It’s the network interface with <em>wire protocol</em> and <em>peer discovery</em>.</p>
+
+<p>It is the last resort for public IP when it cannot be obtained by other ways.</p>
+
+<h2 id="publicip">public.ip</h2>
+<p>It is the node’s public IP. If it’s not configured, default is the IPv4 returned by <code class="highlighter-rouge">http://checkip.amazonaws.com</code>.</p>
+
+<h2 id="genesis">genesis</h2>
+<p>It is the path to the genesis file (in <em>resources/genesis</em>).
+The folder <em>resources/genesis</em> contains several versions of genesis configuration according to the network the peer will run on.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Network</th>
+      <th><code class="highlighter-rouge">genesis</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Regtest</td>
+      <td>rsk-dev.json</td>
+    </tr>
+    <tr>
+      <td>TestNet</td>
+      <td>bamboo-testnet.json</td>
+    </tr>
+    <tr>
+      <td>MainNet</td>
+      <td>rsk-mainnet.json</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="transactionoutdated">transaction.outdated</h2>
+<p>It defines when a transaction is outdated:</p>
+<ul>
+  <li><code class="highlighter-rouge">transaction.outdated.threshold = int</code> is the number of blocks that should pass before pending transaction is removed. Suggested value: <code class="highlighter-rouge">10</code>.</li>
+  <li><code class="highlighter-rouge">transaction.outdated.timeout = int</code> is the number of seconds that should pass before pending transaction is removed. Suggested value: <code class="highlighter-rouge">100</code> (10 blocks * 10 seconds per block).</li>
+</ul>
+
+<h2 id="playvm">play.vm</h2>
+<p>It is a boolean that invokes vm program on message received, if the vm is not invoked the balance transfer occurs anyway. Suggested value: <code class="highlighter-rouge">true</code>.</p>
+
+<h2 id="hellophrase">hello.phrase</h2>
+<p>It is a string that will be included in the hello message of the peer.</p>
+
+<h2 id="detailsinmemorystoragelimit">details.inmemory.storage.limit</h2>
+<p>Specifies when exactly to switch managing storage of the account on autonomous db. Suggested value: <code class="highlighter-rouge">1</code>.
+If the inmemory storage of the contract exceded the limit, just deltas are saved.</p>
+
+<h2 id="solcpath">solc.path</h2>
+<p>It is the path to the <a href="http://solidity.readthedocs.io">Solidity</a> compiler. It’s set because you may want to use the node to compile your smart contracts.
+If you don’t have Solidity installed, you can use <code class="highlighter-rouge">/bin/false</code> as value.</p>
+
+<h2 id="prune">prune</h2>
+
+<p>The prune service is a process that runs over the node storage to lighten the space it needs to be synchronized. This process removes useless data over a determined amount of blocks processed.</p>
+
+<p>To enable prune service in your node <a href="RSK-node-configuration#setting-your-own-config-preferences">override your configuration</a>. These are the recommended parameters:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>prune {
+    # prune service could be enabled or not
+    # values: [true/false]
+    # default: false
+    enabled = true
+
+    # Number of blocks to process
+    blocks {
+        # Number of blocks to copy in each prune run
+        # default: 5000
+        toCopy = 5000
+
+        # Number of blocks to wait to run prune again
+        # default: 10000
+        toWait = 10000
+
+        # Number of blocks to suspend blockchain process
+        # in order to avoid forks
+        # default: 100
+        toAvoidForks = 100
+    }
+}
+</code></pre></div></div>
 
 
             </div>

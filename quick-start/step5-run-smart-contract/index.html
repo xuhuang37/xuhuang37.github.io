@@ -7,8 +7,8 @@
    <meta name="description"
       content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
    <meta name="author" content="RSK Developers Portal">
-   <link rel="canonical" href="https://xuhuang37.github.io/404.html">
-   <title> - RSK Developers Portal</title>
+   <link rel="canonical" href="https://xuhuang37.github.io/quick-start/step5-run-smart-contract/">
+   <title>Quick Start - Step 5 - RSK Developers Portal</title>
 
    <!-- Favicons -->
    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
@@ -401,7 +401,7 @@
 		
 		
 		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-			<span property="name"></span>
+			<span property="name">Quick Start - Step 5</span>
 			<meta property="position" content="2" />
 		</li>
 		
@@ -416,7 +416,16 @@
   
   <ol>
     
-    <li><a href="/">home</a> &nbsp; </li>
+    <li><a href="/">home</a> &#187; </li>
+
+    
+    
+    
+
+    <li><a href="/quick-start">quick-start</a> &#187; </li>
+
+    
+    
     
   </ol>
 </div>
@@ -735,29 +744,29 @@
             <div class="col-lg-9 main-central-col">
                <div class="page-metadata">
                   <time role="presentation"
-                     datetime="2019-08-27 23:48:57 +0800T00:00:00.000Z">2019-08-27</time>
+                     datetime="2019-10-17 11:14:40 +0800T00:00:00.000Z">2019-10-17</time>
                   |
                   
-                  1 minutes to read |
-                  <a href="https://github.com/xuhuang37/xuhuang37.github.io/edit/master/404.html">Edit</a> |
+                  3 minutes to read |
+                  <a href="https://github.com/xuhuang37/xuhuang37.github.io/edit/master/quick-start/step5-run-smart-contract.md">Edit</a> |
                   <div class="dropdown" style="display: inline-block">
                      <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="true">Share</a>
                      <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
                         <li><a class="share-twitter" data-bi-name="twitter"
-                              href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fxuhuang37.github.io/404.html&amp;text=&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fxuhuang37.github.io/quick-start/step5-run-smart-contract/&amp;text=Quick Start - Step 5&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fxuhuang37.github.io/quick-start/step5-run-smart-contract/"><span
                                  class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
                         <li><a class="share-linkedin" data-bi-name="linkedin"
-                              href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fxuhuang37.github.io/quick-start/step5-run-smart-contract/"><span
                                  class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
                         <li><a class="share-facebook" data-bi-name="facebook"
-                              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fxuhuang37.github.io/quick-start/step5-run-smart-contract/"><span
                                  class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
                         <li><a class="share-email" data-bi-name="email"
-                              href="mailto:?subject=&amp;body=%0A%0Ahttps%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="mailto:?subject=Quick Start - Step 5&amp;body=Quick Start - Step 5%0A%0Ahttps%3A%2F%2Fxuhuang37.github.io/quick-start/step5-run-smart-contract/"><span
                                  class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
                         <li><a class="share-link" data-bi-name="link" href="#"
-                              onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://xuhuang37.github.io/404.html').select();document.execCommand('copy');$(el).remove(); return false;"><span
+                              onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://xuhuang37.github.io/quick-start/step5-run-smart-contract/').select();document.execCommand('copy');$(el).remove(); return false;"><span
                                  class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
                      </ul>
                   </div> |
@@ -765,12 +774,79 @@
                      onclick="$('body').toggleClass('dark');if($(this).text() ==='Dark'){$(this).text('Light')}else{$(this).text('Dark')} return false;">Dark</a>
                </div>
 
-               <h1 class="page-title"></h1>
+               <h1 class="page-title">Quick Start - Step 5</h1>
 
-               <h1>404</h1>
+               <h2 id="step-5--run-smart-contracts">Step 5 : Run Smart Contracts</h2>
 
-<p><strong>Page not found</strong></p>
-<p>The requested page could not be found.</p>
+<p>Once the smart contract has been deployed successfully. We can use Truffle console to execute its methods.</p>
+
+<h4 id="enter-truffle-console-mode">Enter Truffle Console Mode</h4>
+
+<p>Truffle console is a basic interactive console connecting to our local node. Type the following command into a terminal.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>truffle console <span class="nt">--network</span> regtest
+</code></pre></div></div>
+
+<p>Note that the <code class="highlighter-rouge">--network regtest</code> parameter tells Truffle to connect to our local RegNet node.</p>
+
+<p>=</p>
+<h4 id="check-balance-of-our-eip20-token">Check Balance of Our EIP20 Token</h4>
+
+<p>First, let us get the address of the account which was used to deploy the the contract.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">accounts</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">getAccounts</span><span class="p">()</span>
+<span class="nx">accounts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>This should print out an address, similar to <code class="highlighter-rouge">0xCD2a3d9F938E13CD947Ec05AbC7FE734Df8DD826</code>.
+Check that this value matches the first address that you see in Ganache’s accounts tab.</p>
+
+<p>Now we can check its balance:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">EIP20instance</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">EIP20</span><span class="p">.</span><span class="nx">deployed</span><span class="p">()</span>
+<span class="k">await</span> <span class="nx">EIP20instance</span><span class="p">.</span><span class="nx">balanceOf</span><span class="p">(</span><span class="nx">accounts</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p>EIP20 is the name of our contract. This command will print out the balance of the main account as a <strong>big number</strong>, which should appear as <code class="highlighter-rouge">&lt;BN: 2710&gt;</code>. To see it as an integer:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">await</span> <span class="nx">EIP20instance</span><span class="p">.</span><span class="nx">balanceOf</span><span class="p">(</span><span class="nx">accounts</span><span class="p">[</span><span class="mi">0</span><span class="p">])).</span><span class="nx">toNumber</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>This should appear as <code class="highlighter-rouge">10000</code>, the number of the tokens was specified in the parameter to the constructor of the smart contract, in the truffle migration.</p>
+
+<h4 id="transfer-token-directly-between-two-accounts">Transfer Token Directly Between Two Accounts</h4>
+
+<p>In Ganache, copy the address of the second account in the accounts tab, and then save it as a variable:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">account2</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">0x2e898C937f22f84a2603fb0BfDeEF43CdAC87f93</span><span class="dl">'</span>
+<span class="p">(</span><span class="k">await</span> <span class="nx">EIP20instance</span><span class="p">.</span><span class="nx">balanceOf</span><span class="p">(</span><span class="nx">accounts</span><span class="p">[</span><span class="mi">0</span><span class="p">])).</span><span class="nx">toNumber</span><span class="p">()</span>
+<span class="p">(</span><span class="k">await</span> <span class="nx">EIP20instance</span><span class="p">.</span><span class="nx">balanceOf</span><span class="p">(</span><span class="nx">account2</span><span class="p">)).</span><span class="nx">toNumber</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>This should print out <code class="highlighter-rouge">10000</code> and <code class="highlighter-rouge">0</code> respectively - all the tokens belong to the first account, and the second account has none.</p>
+
+<p>Next, use the following command to transfer some tokens from the first account to the second account.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">await</span> <span class="nx">EIP20instance</span><span class="p">.</span><span class="nx">transfer</span><span class="p">(</span><span class="nx">account2</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>This should print out an object containing transaction data.</p>
+
+<p>Finally, let us check the account balances to ensure that everything went smoothly:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">await</span> <span class="nx">EIP20instance</span><span class="p">.</span><span class="nx">balanceOf</span><span class="p">(</span><span class="nx">accounts</span><span class="p">[</span><span class="mi">0</span><span class="p">])).</span><span class="nx">toNumber</span><span class="p">()</span>
+<span class="p">(</span><span class="k">await</span> <span class="nx">EIP20instance</span><span class="p">.</span><span class="nx">balanceOf</span><span class="p">(</span><span class="nx">account2</span><span class="p">)).</span><span class="nx">toNumber</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>This should print out <code class="highlighter-rouge">9990</code> and <code class="highlighter-rouge">10</code> respectively. The first account has fewer tokens as they have been transferred to the second account.</p>
+
+<h4 id="congratulations">Congratulations</h4>
+
+<p>You have reached the end of the quick start tutorials. You are now ready to develop decentralised applications!</p>
+
+<hr />
+
+<p><a href="../step4-compile-and-deploy">Previous</a></p>
 
 
             </div>

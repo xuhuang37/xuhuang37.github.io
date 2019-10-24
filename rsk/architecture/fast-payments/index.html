@@ -7,8 +7,8 @@
    <meta name="description"
       content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
    <meta name="author" content="RSK Developers Portal">
-   <link rel="canonical" href="https://xuhuang37.github.io/404.html">
-   <title> - RSK Developers Portal</title>
+   <link rel="canonical" href="https://xuhuang37.github.io/rsk/architecture/fast-payments/">
+   <title>Fast payments - RSK Developers Portal</title>
 
    <!-- Favicons -->
    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
@@ -401,8 +401,16 @@
 		
 		
 		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-			<span property="name"></span>
-			<meta property="position" content="2" />
+			<a property="item" typeof="WebPage" href="/rsk/">
+				<span property="name">RSK Blockchain</span>
+				<meta property="position" content="2" />
+			</a>
+		</li>
+		
+		
+		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<span property="name">Fast payments</span>
+			<meta property="position" content="3" />
 		</li>
 		
 
@@ -416,7 +424,16 @@
   
   <ol>
     
-    <li><a href="/">home</a> &nbsp; </li>
+    <li><a href="/">home</a> &#187; </li>
+
+    
+    
+    
+
+    <li><a href="/rsk">rsk</a> &#187; </li>
+
+    
+    
     
   </ol>
 </div>
@@ -735,29 +752,29 @@
             <div class="col-lg-9 main-central-col">
                <div class="page-metadata">
                   <time role="presentation"
-                     datetime="2019-08-27 23:48:57 +0800T00:00:00.000Z">2019-08-27</time>
+                     datetime="2019-10-07 15:36:00 +0800T00:00:00.000Z">2019-10-07</time>
                   |
                   
-                  1 minutes to read |
-                  <a href="https://github.com/xuhuang37/xuhuang37.github.io/edit/master/404.html">Edit</a> |
+                  3 minutes to read |
+                  <a href="https://github.com/xuhuang37/xuhuang37.github.io/edit/master/rsk/architecture/fast-payments.md">Edit</a> |
                   <div class="dropdown" style="display: inline-block">
                      <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="true">Share</a>
                      <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
                         <li><a class="share-twitter" data-bi-name="twitter"
-                              href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fxuhuang37.github.io/404.html&amp;text=&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fxuhuang37.github.io/rsk/architecture/fast-payments/&amp;text=Fast payments&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fxuhuang37.github.io/rsk/architecture/fast-payments/"><span
                                  class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
                         <li><a class="share-linkedin" data-bi-name="linkedin"
-                              href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fxuhuang37.github.io/rsk/architecture/fast-payments/"><span
                                  class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
                         <li><a class="share-facebook" data-bi-name="facebook"
-                              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fxuhuang37.github.io/rsk/architecture/fast-payments/"><span
                                  class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
                         <li><a class="share-email" data-bi-name="email"
-                              href="mailto:?subject=&amp;body=%0A%0Ahttps%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="mailto:?subject=Fast payments&amp;body=Fast payments%0A%0Ahttps%3A%2F%2Fxuhuang37.github.io/rsk/architecture/fast-payments/"><span
                                  class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
                         <li><a class="share-link" data-bi-name="link" href="#"
-                              onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://xuhuang37.github.io/404.html').select();document.execCommand('copy');$(el).remove(); return false;"><span
+                              onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://xuhuang37.github.io/rsk/architecture/fast-payments/').select();document.execCommand('copy');$(el).remove(); return false;"><span
                                  class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
                      </ul>
                   </div> |
@@ -765,12 +782,41 @@
                      onclick="$('body').toggleClass('dark');if($(this).text() ==='Dark'){$(this).text('Light')}else{$(this).text('Dark')} return false;">Dark</a>
                </div>
 
-               <h1 class="page-title"></h1>
+               <h1 class="page-title">Fast payments</h1>
 
-               <h1>404</h1>
+               <h2 id="fast-payments-and-low-latency-network">Fast Payments and Low-Latency-Network</h2>
 
-<p><strong>Page not found</strong></p>
-<p>The requested page could not be found.</p>
+<p>RSK already enables second layer off-chain payment networks, but still RSK aims to provide a much better on-chain payment network compared to Bitcoin. To achieve this, RSK adopts the DECOR+ and FastBlock5 protocols, which allow reaching a fifteen second average block rate that does not create incentives for mining centralization and selfish- mining.
+Main features:</p>
+<ul>
+  <li>Fifteen to thirty second block intervals (depending on the miner’s state switching efficiency)</li>
+  <li>Full network propagation of last competing blocks to prevent selfish mining and
+RSK White Paper Overview Page 17/20
+ reduce stale block rate</li>
+  <li>New network command to spread block headers with time critical priority</li>
+  <li>DECOR+ protocol for reward sharing between competing blocks</li>
+  <li>GHOST protocol for chain weighting</li>
+</ul>
+
+<p>Since the creation of Bitcoin there has been a race towards lower intervals for PoW blockchain based cryptocurrencies. But low block interval may impact the stability and capability of the cryptocurrency network, so several design factors must be considered. First of all, the most important factor that affects the viability of short confirmation intervals is the number of stale blocks generated. The main factor that affects the stale block rate is the block propagation protocol. For RSK we’ve carefully analyzed this protocol and we’ve run simulations in order to verify the performance, usability and security of the network.</p>
+
+<p>In Bitcoin, when two or more miners have solved blocks at equal height, there is a clear conflict of interest. Each competing miner wants his block to be selected by the remaining miners as the best-chain tip, while the remaining miners generally would not care which one is chosen from the two. However, all the remaining honest miners and users have a rational preference that the same block tip is chosen, because this reduces the reversal probability. The DECOR+ consensus protocol sets the right economic incentives for a convergent choice, without requiring further interaction between miners. The DECOR+ protocol is a reward sharing strategy that incentivizes resolving the conflict economically such that:</p>
+
+<ol>
+  <li>
+    <p>The conflict is resolved deterministically when all parties have access to the same blockchain state information</p>
+  </li>
+  <li>
+    <p>The chosen resolution maximizes all miners’ revenue (collectively) and for both the miners in conflict in case block rewards differ by a high margin</p>
+  </li>
+  <li>
+    <p>The chosen resolution maximizes censorship-resistance if competing blocks have approximately similar rewards</p>
+  </li>
+  <li>
+    <p>Resolving the conflict takes negligible time</p>
+  </li>
+</ol>
+
 
 
             </div>

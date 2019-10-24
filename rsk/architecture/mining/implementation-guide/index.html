@@ -7,8 +7,8 @@
    <meta name="description"
       content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
    <meta name="author" content="RSK Developers Portal">
-   <link rel="canonical" href="https://xuhuang37.github.io/404.html">
-   <title> - RSK Developers Portal</title>
+   <link rel="canonical" href="https://xuhuang37.github.io/rsk/architecture/mining/implementation-guide/">
+   <title>Implementation Guide - RSK Developers Portal</title>
 
    <!-- Favicons -->
    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
@@ -401,8 +401,24 @@
 		
 		
 		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-			<span property="name"></span>
-			<meta property="position" content="2" />
+			<a property="item" typeof="WebPage" href="/rsk/">
+				<span property="name">RSK Blockchain</span>
+				<meta property="position" content="2" />
+			</a>
+		</li>
+		
+		
+		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<a property="item" typeof="WebPage" href="/rsk/architecture/mining/">
+				<span property="name">Merged Mining</span>
+				<meta property="position" content="3" />
+			</a>
+		</li>
+		
+		
+		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<span property="name">Implementation Guide</span>
+			<meta property="position" content="4" />
 		</li>
 		
 
@@ -416,7 +432,16 @@
   
   <ol>
     
-    <li><a href="/">home</a> &nbsp; </li>
+    <li><a href="/">home</a> &#187; </li>
+
+    
+    
+    
+
+    <li><a href="/rsk">rsk</a> &#187; </li>
+
+    
+    
     
   </ol>
 </div>
@@ -735,29 +760,29 @@
             <div class="col-lg-9 main-central-col">
                <div class="page-metadata">
                   <time role="presentation"
-                     datetime="2019-08-27 23:48:57 +0800T00:00:00.000Z">2019-08-27</time>
+                     datetime="2019-10-16 18:52:46 +0800T00:00:00.000Z">2019-10-16</time>
                   |
                   
-                  1 minutes to read |
-                  <a href="https://github.com/xuhuang37/xuhuang37.github.io/edit/master/404.html">Edit</a> |
+                  3 minutes to read |
+                  <a href="https://github.com/xuhuang37/xuhuang37.github.io/edit/master/rsk/architecture/mining/implementation-guide.md">Edit</a> |
                   <div class="dropdown" style="display: inline-block">
                      <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="true">Share</a>
                      <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
                         <li><a class="share-twitter" data-bi-name="twitter"
-                              href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fxuhuang37.github.io/404.html&amp;text=&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fxuhuang37.github.io/rsk/architecture/mining/implementation-guide/&amp;text=Implementation Guide&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fxuhuang37.github.io/rsk/architecture/mining/implementation-guide/"><span
                                  class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
                         <li><a class="share-linkedin" data-bi-name="linkedin"
-                              href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fxuhuang37.github.io/rsk/architecture/mining/implementation-guide/"><span
                                  class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
                         <li><a class="share-facebook" data-bi-name="facebook"
-                              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fxuhuang37.github.io/rsk/architecture/mining/implementation-guide/"><span
                                  class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
                         <li><a class="share-email" data-bi-name="email"
-                              href="mailto:?subject=&amp;body=%0A%0Ahttps%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="mailto:?subject=Implementation Guide&amp;body=Implementation Guide%0A%0Ahttps%3A%2F%2Fxuhuang37.github.io/rsk/architecture/mining/implementation-guide/"><span
                                  class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
                         <li><a class="share-link" data-bi-name="link" href="#"
-                              onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://xuhuang37.github.io/404.html').select();document.execCommand('copy');$(el).remove(); return false;"><span
+                              onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://xuhuang37.github.io/rsk/architecture/mining/implementation-guide/').select();document.execCommand('copy');$(el).remove(); return false;"><span
                                  class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
                      </ul>
                   </div> |
@@ -765,12 +790,67 @@
                      onclick="$('body').toggleClass('dark');if($(this).text() ==='Dark'){$(this).text('Light')}else{$(this).text('Dark')} return false;">Dark</a>
                </div>
 
-               <h1 class="page-title"></h1>
+               <h1 class="page-title">Implementation Guide</h1>
 
-               <h1>404</h1>
+               <h2 id="about">About</h2>
 
-<p><strong>Page not found</strong></p>
-<p>The requested page could not be found.</p>
+<p>Description of steps to follow in order to add RSK merged mining capabilities to a mining pool software.</p>
+
+<h2 id="what-do-you-need-to-do">What do you need to do</h2>
+
+<p>Add the RSK merged mining information in Bitcoin block as a commitment, the complete steps are as follow:</p>
+
+<h4 id="1-get-the-work-from-rsk-node">1. Get the work from RSK node</h4>
+
+<p>Use the <a href="/develop/json-rpc-api#mnr_getwork">mnr_getWork</a> method from the RSK node’s JSON-RPC API. This method returns the information of the current block for merged mining, the boundary condition to be met (“target”) and some other data.</p>
+
+<h4 id="2-put-the-information-for-merged-mining-in-the-bitcoin-block">2. Put the information for merged mining in the Bitcoin block</h4>
+
+<h5 id="format">Format</h5>
+
+<p><code class="highlighter-rouge">OP_RETURN</code> + <code class="highlighter-rouge">Length</code> + <code class="highlighter-rouge">RSKBLOCK:</code> + <code class="highlighter-rouge">RskBlockInfo</code></p>
+
+<ul>
+  <li><code class="highlighter-rouge">OP_RETURN:</code> is<code class="highlighter-rouge">0x6a</code></li>
+  <li><code class="highlighter-rouge">Length</code> is <code class="highlighter-rouge">0x29</code> and represents the length of the information included after the <code class="highlighter-rouge">OP_RETURN</code> opcode</li>
+  <li><code class="highlighter-rouge">RSKBLOCK:</code> is the ascii string for<code class="highlighter-rouge">0x52534b424c4f434b3a</code></li>
+  <li><code class="highlighter-rouge">RskBlockInfo</code> is the block information in binary format.</li>
+</ul>
+
+<p>For example, if <code class="highlighter-rouge">RskBlockInfo</code> is <code class="highlighter-rouge">e5aad3b6b9dc71a3eb98a069bd29ca32211aee8b03fd462f4ffbbe97cc75a174</code> 
+    the merged mining information is<code class="highlighter-rouge">6a2952534b424c4f434b3ae5aad3b6b9dc71a3eb98a069bd29ca32211aee8b03fd462f4ffbbe97cc75a174</code></p>
+
+<h5 id="position">Position</h5>
+
+<p>Include as the last output of Bitcoin coinbase transaction.</p>
+
+<h5 id="restrictions">Restrictions</h5>
+
+<ul>
+  <li>The number of bytes immediately after <code class="highlighter-rouge">RskBlockInfo</code>, up to the end of the coinbase transaction must be lower than or equal to 128 bytes.</li>
+  <li>The trail raw bytes must not contain the binary string <code class="highlighter-rouge">RSKBLOCK:</code></li>
+  <li>The probability of the RSK tag to appear by chance is negligible, but pool servers must not rule out the possibility of a rogue Bitcoin address included in the coinbase transaction having this pattern, and being used as an attack to break the validity of merged mining header.</li>
+  <li>The <code class="highlighter-rouge">RSKBLOCK:</code> tag may appear by chance or maliciously in the ExtraNonce2 data field that is provided by miners as part of the Stratum protocol. This is not a problem as long as the poolserver adds the RSKBLOCK: tag after the ExtraNonce2 chunk.</li>
+</ul>
+
+<h4 id="3-notify-miners-on-a-faster-pace">3. Notify Miners on a faster pace</h4>
+
+<p>RSK average block time is 30 seconds which is faster than Bitcoin 10 minutes. This fact triggers the following implementation changes:</p>
+<ul>
+  <li>Retrieve work from RSK node every 2 seconds to be always mining on the last RSK work.</li>
+  <li>Sent to miners a <code class="highlighter-rouge">mining.notify</code> message, from stratum protocol, every time a new RSK work is received.</li>
+</ul>
+
+<h4 id="4-mine-until-work-is-enough-to-meet-the-target-received-in-the-work-info">4. Mine until work is enough to meet the target received in the work info</h4>
+
+<h4 id="5-submit-solution-to-rsk-node">5. Submit Solution to RSK node</h4>
+
+<p>Use the <a href="/develop/json-rpc-api#mnr_submitbitcoinblockpartialmerkle">mnr_submitBitcoinBlockPartialMerkle</a> method from RSK node’s JSON-RPC API. That method is the optimal in perfomance and prefered among others available. 
+Other submission methods and information about the pros and cons between them can be found in the <a href="/develop/json-rpc-api">Mining JSON-RPC API documentation</a>.</p>
+
+<h2 id="influence-to-bitcoin">Influence to Bitcoin</h2>
+
+<p>As a result of merged mining with RSK, Bitcoin network does not get junked up with merged mining stuff since it will have tiny information stored (only an extra output on the coinbase transaction). Also, no changes are required on Bitcoin node to support merged mining with RSK.</p>
 
 
             </div>

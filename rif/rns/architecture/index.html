@@ -7,8 +7,8 @@
    <meta name="description"
       content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
    <meta name="author" content="RSK Developers Portal">
-   <link rel="canonical" href="https://xuhuang37.github.io/404.html">
-   <title> - RSK Developers Portal</title>
+   <link rel="canonical" href="https://xuhuang37.github.io/rif/rns/architecture/">
+   <title>Architecture - RSK Developers Portal</title>
 
    <!-- Favicons -->
    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
@@ -401,8 +401,24 @@
 		
 		
 		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-			<span property="name"></span>
-			<meta property="position" content="2" />
+			<a property="item" typeof="WebPage" href="/rif/">
+				<span property="name">RSK Infrastructure Framework</span>
+				<meta property="position" content="2" />
+			</a>
+		</li>
+		
+		
+		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<a property="item" typeof="WebPage" href="/rif/rns/">
+				<span property="name">RNS</span>
+				<meta property="position" content="3" />
+			</a>
+		</li>
+		
+		
+		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<span property="name">Architecture</span>
+			<meta property="position" content="4" />
 		</li>
 		
 
@@ -416,7 +432,16 @@
   
   <ol>
     
-    <li><a href="/">home</a> &nbsp; </li>
+    <li><a href="/">home</a> &#187; </li>
+
+    
+    
+    
+
+    <li><a href="/rif">rif</a> &#187; </li>
+
+    
+    
     
   </ol>
 </div>
@@ -735,29 +760,29 @@
             <div class="col-lg-9 main-central-col">
                <div class="page-metadata">
                   <time role="presentation"
-                     datetime="2019-08-27 23:48:57 +0800T00:00:00.000Z">2019-08-27</time>
+                     datetime="2019-10-07 15:36:00 +0800T00:00:00.000Z">2019-10-07</time>
                   |
                   
-                  1 minutes to read |
-                  <a href="https://github.com/xuhuang37/xuhuang37.github.io/edit/master/404.html">Edit</a> |
+                  2 minutes to read |
+                  <a href="https://github.com/xuhuang37/xuhuang37.github.io/edit/master/rif/rns/architecture/index.md">Edit</a> |
                   <div class="dropdown" style="display: inline-block">
                      <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="true">Share</a>
                      <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
                         <li><a class="share-twitter" data-bi-name="twitter"
-                              href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fxuhuang37.github.io/404.html&amp;text=&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fxuhuang37.github.io/rif/rns/architecture/&amp;text=Architecture&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fxuhuang37.github.io/rif/rns/architecture/"><span
                                  class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
                         <li><a class="share-linkedin" data-bi-name="linkedin"
-                              href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fxuhuang37.github.io/rif/rns/architecture/"><span
                                  class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
                         <li><a class="share-facebook" data-bi-name="facebook"
-                              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fxuhuang37.github.io/rif/rns/architecture/"><span
                                  class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
                         <li><a class="share-email" data-bi-name="email"
-                              href="mailto:?subject=&amp;body=%0A%0Ahttps%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="mailto:?subject=Architecture&amp;body=Architecture%0A%0Ahttps%3A%2F%2Fxuhuang37.github.io/rif/rns/architecture/"><span
                                  class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
                         <li><a class="share-link" data-bi-name="link" href="#"
-                              onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://xuhuang37.github.io/404.html').select();document.execCommand('copy');$(el).remove(); return false;"><span
+                              onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://xuhuang37.github.io/rif/rns/architecture/').select();document.execCommand('copy');$(el).remove(); return false;"><span
                                  class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
                      </ul>
                   </div> |
@@ -765,12 +790,48 @@
                      onclick="$('body').toggleClass('dark');if($(this).text() ==='Dark'){$(this).text('Light')}else{$(this).text('Dark')} return false;">Dark</a>
                </div>
 
-               <h1 class="page-title"></h1>
+               <h1 class="page-title">Architecture</h1>
 
-               <h1>404</h1>
+               <p>The RIF Name Service architecture is based on 4 components:</p>
+<ul>
+  <li><a href="#registry"><strong>Registry</strong></a>: RNS domain registry.</li>
+  <li><a href="#registrar"><strong>Registrar</strong></a>: the auction logic manager.</li>
+  <li><a href="#deed"><strong>Deeds</strong></a>: handle locked tokens and rent payment commits.</li>
+  <li><a href="#resolver"><strong>Resolver</strong></a>: the resolution between a domain and a resource.</li>
+  <li><a href="#resolver"><strong>Reverse resolution</strong></a>: the resolution between an address and a name.</li>
+</ul>
 
-<p><strong>Page not found</strong></p>
-<p>The requested page could not be found.</p>
+<p><img src="/assets/img/rns/structure.png" class="img-fluid" alt="architecture" /></p>
+
+<h2 id="registrar">Registrar</h2>
+
+<p>To <a href="/rif/rns/operation/Register-a-name">register a domain</a> in RNS is by auction that is performed by the <a href="/rif/rns/architecture/Registrar">registrar contract</a>. This contract manages the auction process, any user can start an auction for any available domain name, any user can bid in any auction in <a href="/rif/rns/architecture/Registrar/#states">Open state</a>, and only the highest bidder acquires that domain name.</p>
+
+<p>The subdomains can be delegated using the <a href="/rif/rns/architecture/Registry">registry contract</a> without an auction process only by the domain owner. For example: <code class="highlighter-rouge">nakamoto.rsk</code> can register <code class="highlighter-rouge">satoshi.nakamoto.rsk</code> subdomain directly, and delegate the ownership of the subdomain.</p>
+
+<h2 id="deed">Deed</h2>
+
+<p>The <a href="/rif/rns/architecture/Deed">Deed contract</a> has two main functions:</p>
+<ul>
+  <li>
+    <p>Register the bid payment: for each bid, the Registrar contract deploys a Deed contract and sends user’s bade RIF tokens to it.</p>
+  </li>
+  <li>
+    <p>Manage the annual rent: the owner must pay an annual rent for each domain acquired.</p>
+  </li>
+</ul>
+
+<h2 id="registry">Registry</h2>
+
+<p>The <a href="/rif/rns/architecture/Registry">Registry contract</a> stores and handles the resolution between a domain name, its owner and the resolver for the domain.</p>
+
+<h2 id="resolver">Resolver</h2>
+
+<p>The Resolver contract handles the resolution between the name domain and the resource. Each Registry entry references a Resolver. A user can use <a href="/rif/rns/architecture/Resolver">RNS Resolver</a> or <a href="/rif/rns/operation/Resolve-a-name/">implement a custom Resolver</a>.</p>
+
+<h2 id="reverse-suite">Reverse suite</h2>
+
+<p>A TLD, a <a href="ReverseRegistrar">registrar</a>, and a <a href="AddrResolver">resolver interface</a> that allows for reverse resolution of RSK addresses using RNS. This permits associating a human-readable name with any RSK blockchain address. Resolvers can be certain that the reverse record was published by the owner of the RSK address in question.</p>
 
 
             </div>

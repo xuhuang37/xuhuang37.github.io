@@ -7,8 +7,8 @@
    <meta name="description"
       content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
    <meta name="author" content="RSK Developers Portal">
-   <link rel="canonical" href="https://xuhuang37.github.io/404.html">
-   <title> - RSK Developers Portal</title>
+   <link rel="canonical" href="https://xuhuang37.github.io/develop/json-rpc-api/">
+   <title>JSON-RPC API - RSK Developers Portal</title>
 
    <!-- Favicons -->
    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
@@ -401,8 +401,16 @@
 		
 		
 		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-			<span property="name"></span>
-			<meta property="position" content="2" />
+			<a property="item" typeof="WebPage" href="/develop/">
+				<span property="name">Develop</span>
+				<meta property="position" content="2" />
+			</a>
+		</li>
+		
+		
+		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<span property="name">JSON-RPC API</span>
+			<meta property="position" content="3" />
 		</li>
 		
 
@@ -416,7 +424,16 @@
   
   <ol>
     
-    <li><a href="/">home</a> &nbsp; </li>
+    <li><a href="/">home</a> &#187; </li>
+
+    
+    
+    
+
+    <li><a href="/develop">develop</a> &#187; </li>
+
+    
+    
     
   </ol>
 </div>
@@ -735,29 +752,29 @@
             <div class="col-lg-9 main-central-col">
                <div class="page-metadata">
                   <time role="presentation"
-                     datetime="2019-08-27 23:48:57 +0800T00:00:00.000Z">2019-08-27</time>
+                     datetime="2019-10-16 18:52:20 +0800T00:00:00.000Z">2019-10-16</time>
                   |
                   
-                  1 minutes to read |
-                  <a href="https://github.com/xuhuang37/xuhuang37.github.io/edit/master/404.html">Edit</a> |
+                  8 minutes to read |
+                  <a href="https://github.com/xuhuang37/xuhuang37.github.io/edit/master/develop/json-rpc-api.md">Edit</a> |
                   <div class="dropdown" style="display: inline-block">
                      <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="true">Share</a>
                      <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
                         <li><a class="share-twitter" data-bi-name="twitter"
-                              href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fxuhuang37.github.io/404.html&amp;text=&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fxuhuang37.github.io/develop/json-rpc-api/&amp;text=JSON-RPC API&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fxuhuang37.github.io/develop/json-rpc-api/"><span
                                  class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
                         <li><a class="share-linkedin" data-bi-name="linkedin"
-                              href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fxuhuang37.github.io/develop/json-rpc-api/"><span
                                  class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
                         <li><a class="share-facebook" data-bi-name="facebook"
-                              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fxuhuang37.github.io/develop/json-rpc-api/"><span
                                  class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
                         <li><a class="share-email" data-bi-name="email"
-                              href="mailto:?subject=&amp;body=%0A%0Ahttps%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="mailto:?subject=JSON-RPC API&amp;body=JSON-RPC API%0A%0Ahttps%3A%2F%2Fxuhuang37.github.io/develop/json-rpc-api/"><span
                                  class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
                         <li><a class="share-link" data-bi-name="link" href="#"
-                              onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://xuhuang37.github.io/404.html').select();document.execCommand('copy');$(el).remove(); return false;"><span
+                              onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://xuhuang37.github.io/develop/json-rpc-api/').select();document.execCommand('copy');$(el).remove(); return false;"><span
                                  class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
                      </ul>
                   </div> |
@@ -765,12 +782,216 @@
                      onclick="$('body').toggleClass('dark');if($(this).text() ==='Dark'){$(this).text('Light')}else{$(this).text('Dark')} return false;">Dark</a>
                </div>
 
-               <h1 class="page-title"></h1>
+               <h1 class="page-title">JSON-RPC API</h1>
 
-               <h1>404</h1>
+               <p>These methods are meant to be used for mining. Mining pools should interact with this API in order to do merged mining.</p>
 
-<p><strong>Page not found</strong></p>
-<p>The requested page could not be found.</p>
+<h2 id="json-rpc-methods">JSON-RPC Methods</h2>
+
+<ul>
+  <li><a href="#mnr_getwork">mnr_getWork</a></li>
+  <li><a href="#mnr_submitbitcoinblock">mnr_submitBitcoinBlock</a></li>
+  <li><a href="#mnr_submitbitcoinblocktransactions">mnr_submitBitcoinBlockTransactions</a></li>
+  <li><a href="#mnr_submitbitcoinblockpartialmerkle">mnr_submitBitcoinBlockPartialMerkle</a></li>
+</ul>
+
+<h2 id="json-rpc-api-reference">JSON-RPC API Reference</h2>
+
+<h4 id="mnr_getwork">mnr_getWork</h4>
+
+<p>Returns the hash of the current block for merged mining, the boundary condition to be met (“target”), parent block hash and notify flag.</p>
+
+<h5 id="parameters">Parameters</h5>
+
+<p>none</p>
+
+<h5 id="returns">Returns</h5>
+
+<ul>
+  <li><code class="highlighter-rouge">blockHashForMergedMining</code>: <code class="highlighter-rouge">DATA</code>, 32 Bytes - Hash of the RSK block that should be used for merged mining. This
+hash must be included after the <code class="highlighter-rouge">RSKBLOCK:</code> tag. It is a 256-bit unsigned integer represented as a
+hexadecimal string.</li>
+  <li><code class="highlighter-rouge">target</code>: <code class="highlighter-rouge">DATA</code>, 32 Bytes - Target difficulty that solution for current work must met to be valid.  Merged mined block is solved if it’s hash is below or equal this target.
+Target is a 256-bit unsigned integer represented as a hexadecimal string.</li>
+  <li><code class="highlighter-rouge">parentBlockHash</code>: <code class="highlighter-rouge">DATA</code>, 32 Bytes - Parent block hash, 256-bit unsigned integer as an hexadecimal string.</li>
+  <li><code class="highlighter-rouge">feesPaidToMiner</code>: <code class="highlighter-rouge">QUANTITY</code> - Fees paid to the miner in the RSK block in 1/10^18 bitcoins.</li>
+  <li><code class="highlighter-rouge">notify</code>: <code class="highlighter-rouge">Boolean</code> - This is a boolean flag that is used by RSK node to alert mining pools
+that there is a new work unit and all previous work units can be updated.</li>
+</ul>
+
+<h5 id="example">Example</h5>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//Request</span>
+<span class="nx">curl</span> <span class="o">-</span><span class="nx">X</span> <span class="nx">POST</span> <span class="o">--</span><span class="nx">data</span> <span class="dl">'</span><span class="s1">{"jsonrpc": "2.0", "id":"1", "method": "mnr_getWork", "params": [] }</span><span class="dl">'</span> <span class="o">-</span><span class="nx">H</span> <span class="dl">"</span><span class="s2">Content-Type:application/json</span><span class="dl">"</span> 
+
+
+<span class="c1">//Result</span>
+<span class="p">{</span>
+<span class="dl">"</span><span class="s2">jsonrpc</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">2.0</span><span class="dl">"</span><span class="p">,</span>
+<span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+<span class="dl">"</span><span class="s2">result</span><span class="dl">"</span><span class="p">:</span>
+  <span class="p">{</span>
+  <span class="dl">"</span><span class="s2">jsonrpc</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">2.0</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">1</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">result</span><span class="dl">"</span><span class="p">:{</span>
+  <span class="dl">"</span><span class="s2">blockHashForMergedMining</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">0x43513e9808bab44f1b4e9858ff737b226d7893d7d7ed4f92fdc885e5d0922672</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">target</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">0x5555555555555555555555555555555555555555555555555555555555555555</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">feesPaidToMiner</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">0</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">notify</span><span class="dl">"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">parentBlockHash</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">0x6953ed2171304931f096307ec71120da1e26d356e2aab6e7c35dbda9997d3f5e</span><span class="dl">"</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<hr />
+
+<h4 id="mnr_submitbitcoinblock">mnr_submitBitcoinBlock</h4>
+
+<p>Used for submitting a solution to RSK node. This method sends a bitcoin block through the network (~1Mb), for methods that use lower network resources please refer to:</p>
+<ul>
+  <li><a href="#mnr_submitbitcoinblocktransactions">mnr_submitBitcoinBlockTransactions</a></li>
+  <li><a href="#mnr_submitbitcoinblockpartialmerkle">mnr_submitBitcoinBlockPartialMerkle</a></li>
+</ul>
+
+<h5 id="parameters-1">Parameters</h5>
+
+<p>Bitcoin block serialized as hexadecimal.</p>
+
+<h5 id="returns-1">Returns</h5>
+
+<ul>
+  <li><code class="highlighter-rouge">blockImportedResult</code>: <code class="highlighter-rouge">DATA</code> -  Hexadecimal String, indicates if solution was included or not in the blockchain. Possible status are:
+    <ul>
+      <li>0x494d504f525445445f42455354 (IMPORTED_BEST) - Valid block and added to the main chain.</li>
+      <li>0x494d504f525445445f4e4f545f42455354 (IMPORTED_NOT_BEST) - Block is valid and was added as an uncle to the chain.</li>
+      <li>0x4558495354 (EXIST) - Block already exist in chain.</li>
+      <li>0x4e4f5f504152454e54 (NO_PARENT) - Block parent doesn’t exist.</li>
+      <li>0x494e56414c49445f424c4f434b (INVALID_BLOCK) - Block is invalid.</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">blockHash</code>: <code class="highlighter-rouge">DATA</code>, 32 Bytes - Hash for the block added to the chain.</li>
+  <li><code class="highlighter-rouge">blockIncludedHeight</code>: <code class="highlighter-rouge">QUANTITY</code> - Height of the chain where the block was added.</li>
+</ul>
+
+<h5 id="example-1">Example</h5>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//Request</span>
+<span class="nx">curl</span> <span class="o">-</span><span class="nx">X</span> <span class="nx">POST</span> <span class="o">--</span><span class="nx">data</span> <span class="dl">'</span><span class="s1">{"jsonrpc": "2.0", "method": "mnr_submitBitcoinBlock", "params": ["010000309821be091716ff34ddd54dd79a5d26af10a4214229b78b6e89d490360c000000eb436828fd1883ca69c1c6876174412da9f58f4848a29d7f4d698a7d09eaed593497ee58ffff7f2021393df40101000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1f021402043497ee5808f8000002000000000d2f72736b5f7374726174756d2f000000000240be4025000000001976a914e5e9208d759e89a2e1767f5baeda58f188da206a88ac00000000000000002952534b424c4f434b3a3be5d1c4427993f22f985ff8e99a2b8560b2d1205580867e4eec21123315213b00000000"], "id": 1}</span><span class="dl">'</span> <span class="o">-</span><span class="nx">H</span> <span class="dl">"</span><span class="s2">Content-Type:application/json</span><span class="dl">"</span>
+
+<span class="c1">//Result</span>
+<span class="p">{</span>
+  <span class="dl">"</span><span class="s2">jsonrpc</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">2.0</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="dl">"</span><span class="s2">result</span><span class="dl">"</span><span class="p">:{</span>
+      <span class="dl">"</span><span class="s2">blockImportedResult</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">0x494d504f525445445f42455354</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">blockHash</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">0x6953ed2171304931f096307ec71120da1e26d356e2aab6e7c35dbda9997d3f5e</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">blockIncludedHeight</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">0x762</span><span class="dl">"</span>
+      <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h5 id="error-result">Error Result</h5>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">jsonrpc</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">2.0</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">error</span><span class="dl">"</span><span class="p">:{</span>
+    <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span>  <span class="o">-</span><span class="mi">33000</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">message</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Error message..</span><span class="dl">"</span>
+  <span class="p">}</span>
+<span class="p">}</span><span class="s2">`
+</span></code></pre></div></div>
+
+<hr />
+<h4 id="mnr_submitbitcoinblocktransactions">mnr_submitBitcoinBlockTransactions</h4>
+
+<p>Used for submitting a solution to RSK node. This method sends only some information from the bitcoin block (hash, header, coinbase, transaction’s hashes) 
+It should be used over <a href="#mnr_submitbitcoinblock">mnr_submitBitcoinBlock</a> since it sends less data over the network.
+Implementation wide, it is considered to be easier to use than <a href="#mnr_submitbitcoinblockpartialmerkle">mnr_submitBitcoinBlockPartialMerkle</a></p>
+
+<h5 id="parameters-2">Parameters</h5>
+
+<ol>
+  <li><code class="highlighter-rouge">blockHashHex</code>: <code class="highlighter-rouge">DATA</code>, 32 Bytes - Hash of the bitcoin block used for merged mining.</li>
+  <li><code class="highlighter-rouge">blockHeaderHex</code>: - <code class="highlighter-rouge">DATA</code>, 80 Bytes - Bitcoin block header used for merged mining.</li>
+  <li><code class="highlighter-rouge">coinbaseHex</code>: <code class="highlighter-rouge">DATA</code> - Bitcoin coinbase transaction that belongs to the block used for merged mining.</li>
+  <li><code class="highlighter-rouge">txnHashesHex</code>: <code class="highlighter-rouge">DATA</code> - Collection of transaction hashes that belong to the block used for merged mining. Said collection must be formatted into a space separated string (e.g. “hash1 hash1 hash2”). The coinbase’s hash <strong>must not</strong> be present in the collection.</li>
+</ol>
+
+<h5 id="returns-2">Returns</h5>
+
+<p>See <a href="#mnr_submitbitcoinblock">mnr_submitBitcoinBlock</a></p>
+
+<h5 id="example-2">Example</h5>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//Request</span>
+<span class="nx">curl</span> <span class="o">-</span><span class="nx">X</span> <span class="nx">POST</span> <span class="o">--</span><span class="nx">data</span> <span class="dl">'</span><span class="s1">{"jsonrpc":"2.0","method":"mnr_submitBitcoinBlockTransactions","params":["39eee5957455bfdeaa432605c75659020ac75b378df2d78566449700000000","03000030c72830a3533b330c204ba9176614ca1b9e9c514bfc79efa1fc8674178c5c8c020bfd0e47a9cbcc7fd9acf206420370e2b56f6f89fc2b48f161c8db63671b2712495fcf5affff7f20892982dc","01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff3002ce000004495fcf5a04cb9e820d0c595ecf5a00000000000000000a636b706f6f6c0d2f6d696e656420627920636b2fffffffff02a80a0395000000001976a914d754fa97263b730e513a5ef814e2204e1c6a4aef88ac00000000000000002a6a52534b424c4f434b3af84a70a01da46056fa1329fa5f496cf691afb7df832834071ea3868fa1fe70a200000000","e62c2f2526fb1bd2b12d19ed1b8b545810a2743c6d05a9f241dbedaaed82a8d0"],"id":1}</span><span class="dl">'</span> <span class="o">-</span><span class="nx">H</span> <span class="dl">"</span><span class="s2">Content-Type:application/json</span><span class="dl">"</span>
+  
+<span class="c1">//Result</span>
+<span class="p">{</span>
+ <span class="dl">"</span><span class="s2">jsonrpc</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">2.0</span><span class="dl">"</span><span class="p">,</span>
+ <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span><span class="mi">54</span><span class="p">,</span>
+ <span class="dl">"</span><span class="s2">result</span><span class="dl">"</span><span class="p">:{</span>
+    <span class="dl">"</span><span class="s2">blockImportedResult</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">0x494d504f525445445f42455354</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">blockHash</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">0x6953ed2171304931f096307ec71120da1e26d356e2aab6e7c35dbda9997d3f5e</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">blockIncludedHeight</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">0x762</span><span class="dl">"</span>
+    <span class="p">}</span>
+ <span class="p">}</span>
+</code></pre></div></div>
+
+<h5 id="error-result-1">Error Result</h5>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">jsonrpc</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">2.0</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">error</span><span class="dl">"</span><span class="p">:{</span>
+    <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span> <span class="o">-</span><span class="mi">33000</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">message</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Error message..</span><span class="dl">"</span>
+  <span class="p">}</span>
+<span class="p">}</span><span class="s2">`
+</span></code></pre></div></div>
+
+<hr />
+<h4 id="mnr_submitbitcoinblockpartialmerkle">mnr_submitBitcoinBlockPartialMerkle</h4>
+
+<p>Used for submitting a solution to RSK node. This method sends only some information from the bitcoin block (hash, header, coinbase, coinbase’s merkle tree branch hashes, transaction count) 
+It sends minimal data over the network so it is recommended to be used over the other two submit methods provided by this API.</p>
+
+<h5 id="parameters-3">Parameters</h5>
+
+<ol>
+  <li><code class="highlighter-rouge">blockHashHex</code>: <code class="highlighter-rouge">DATA</code>, 32 Bytes - Hash of the bitcoin block used for merged mining.</li>
+  <li><code class="highlighter-rouge">blockHeaderHex</code>: - <code class="highlighter-rouge">DATA</code>, 80 Bytes - Bitcoin block header used for merged mining.</li>
+  <li><code class="highlighter-rouge">coinbaseHex</code>: <code class="highlighter-rouge">DATA</code> - Bitcoin coinbase transaction that belongs to the block used for merged mining.</li>
+  <li><code class="highlighter-rouge">merkleHashesHex</code>: <code class="highlighter-rouge">DATA</code> - Collection of merkle hashes from the bitcoin block used for merged mining. Hashes should be from the merkle branch to which the coinbase belongs. Said collection must be formatted into a space separated string (e.g. “hash1 hash1 hash2”). The coinbase’s hash <strong>must</strong> be present in the collection in the <strong>first</strong> position.</li>
+  <li><code class="highlighter-rouge">blockTxnCountHex</code>: <code class="highlighter-rouge">QUANTITY</code> - Length of merkle hashes collection represented as an hexadecimal string.</li>
+</ol>
+
+<h5 id="returns-3">Returns</h5>
+
+<p>See <a href="#mnr_submitbitcoinblock">mnr_submitBitcoinBlock</a></p>
+
+<h5 id="example-3">Example</h5>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//Request</span>
+<span class="nx">curl</span> <span class="o">-</span><span class="nx">X</span> <span class="nx">POST</span> <span class="o">--</span><span class="nx">data</span> <span class="dl">'</span><span class="s1">{"jsonrpc":"2.0","method":"mnr_submitBitcoinBlockPartialMerkle","params":["39eee5957455bfdeaa432605c75659020ac75b378df2d78566449700000000","03000030c72830a3533b330c204ba9176614ca1b9e9c514bfc79efa1fc8674178c5c8c020bfd0e47a9cbcc7fd9acf206420370e2b56f6f89fc2b48f161c8db63671b2712495fcf5affff7f20892982dc","01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff3002ce000004495fcf5a04cb9e820d0c595ecf5a00000000000000000a636b706f6f6c0d2f6d696e656420627920636b2fffffffff02a80a0395000000001976a914d754fa97263b730e513a5ef814e2204e1c6a4aef88ac00000000000000002a6a52534b424c4f434b3af84a70a01da46056fa1329fa5f496cf691afb7df832834071ea3868fa1fe70a200000000","39975a670108078346cb166ed991ccc7328f4f8bc06fd4a77b642e0dbcfc7405",1],"id":1}</span><span class="dl">'</span> <span class="o">-</span><span class="nx">H</span> <span class="dl">"</span><span class="s2">Content-Type:application/json</span><span class="dl">"</span>
+    
+<span class="c1">//Result</span>
+<span class="p">{</span>
+ <span class="dl">"</span><span class="s2">jsonrpc</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">2.0</span><span class="dl">"</span><span class="p">,</span>
+ <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span><span class="mi">54</span><span class="p">,</span>
+ <span class="dl">"</span><span class="s2">result</span><span class="dl">"</span><span class="p">:{</span>
+    <span class="dl">"</span><span class="s2">blockImportedResult</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">0x494d504f525445445f42455354</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">blockHash</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">0x6953ed2171304931f096307ec71120da1e26d356e2aab6e7c35dbda9997d3f5e</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">blockIncludedHeight</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">0x762</span><span class="dl">"</span>
+    <span class="p">}</span>
+ <span class="p">}</span>
+</code></pre></div></div>
+
+<h5 id="error-result-2">Error Result</h5>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">jsonrpc</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">2.0</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">error</span><span class="dl">"</span><span class="p">:{</span>
+    <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span>  <span class="o">-</span><span class="mi">33000</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">message</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Error message..</span><span class="dl">"</span>
+  <span class="p">}</span>
+<span class="p">}</span><span class="s2">`
+</span></code></pre></div></div>
 
 
             </div>

@@ -7,8 +7,8 @@
    <meta name="description"
       content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
    <meta name="author" content="RSK Developers Portal">
-   <link rel="canonical" href="https://xuhuang37.github.io/404.html">
-   <title> - RSK Developers Portal</title>
+   <link rel="canonical" href="https://xuhuang37.github.io/rsk/architecture/security/">
+   <title>Security model - RSK Developers Portal</title>
 
    <!-- Favicons -->
    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
@@ -401,8 +401,16 @@
 		
 		
 		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-			<span property="name"></span>
-			<meta property="position" content="2" />
+			<a property="item" typeof="WebPage" href="/rsk/">
+				<span property="name">RSK Blockchain</span>
+				<meta property="position" content="2" />
+			</a>
+		</li>
+		
+		
+		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<span property="name">Security model</span>
+			<meta property="position" content="3" />
 		</li>
 		
 
@@ -416,7 +424,16 @@
   
   <ol>
     
-    <li><a href="/">home</a> &nbsp; </li>
+    <li><a href="/">home</a> &#187; </li>
+
+    
+    
+    
+
+    <li><a href="/rsk">rsk</a> &#187; </li>
+
+    
+    
     
   </ol>
 </div>
@@ -735,29 +752,29 @@
             <div class="col-lg-9 main-central-col">
                <div class="page-metadata">
                   <time role="presentation"
-                     datetime="2019-08-27 23:48:57 +0800T00:00:00.000Z">2019-08-27</time>
+                     datetime="2019-10-07 15:36:00 +0800T00:00:00.000Z">2019-10-07</time>
                   |
                   
-                  1 minutes to read |
-                  <a href="https://github.com/xuhuang37/xuhuang37.github.io/edit/master/404.html">Edit</a> |
+                  4 minutes to read |
+                  <a href="https://github.com/xuhuang37/xuhuang37.github.io/edit/master/rsk/architecture/security.md">Edit</a> |
                   <div class="dropdown" style="display: inline-block">
                      <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="true">Share</a>
                      <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
                         <li><a class="share-twitter" data-bi-name="twitter"
-                              href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fxuhuang37.github.io/404.html&amp;text=&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fxuhuang37.github.io/rsk/architecture/security/&amp;text=Security model&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fxuhuang37.github.io/rsk/architecture/security/"><span
                                  class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
                         <li><a class="share-linkedin" data-bi-name="linkedin"
-                              href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fxuhuang37.github.io/rsk/architecture/security/"><span
                                  class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
                         <li><a class="share-facebook" data-bi-name="facebook"
-                              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fxuhuang37.github.io/rsk/architecture/security/"><span
                                  class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
                         <li><a class="share-email" data-bi-name="email"
-                              href="mailto:?subject=&amp;body=%0A%0Ahttps%3A%2F%2Fxuhuang37.github.io/404.html"><span
+                              href="mailto:?subject=Security model&amp;body=Security model%0A%0Ahttps%3A%2F%2Fxuhuang37.github.io/rsk/architecture/security/"><span
                                  class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
                         <li><a class="share-link" data-bi-name="link" href="#"
-                              onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://xuhuang37.github.io/404.html').select();document.execCommand('copy');$(el).remove(); return false;"><span
+                              onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://xuhuang37.github.io/rsk/architecture/security/').select();document.execCommand('copy');$(el).remove(); return false;"><span
                                  class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
                      </ul>
                   </div> |
@@ -765,12 +782,21 @@
                      onclick="$('body').toggleClass('dark');if($(this).text() ==='Dark'){$(this).text('Light')}else{$(this).text('Dark')} return false;">Dark</a>
                </div>
 
-               <h1 class="page-title"></h1>
+               <h1 class="page-title">Security model</h1>
 
-               <h1>404</h1>
+               <h2 id="security-model">Security Model</h2>
 
-<p><strong>Page not found</strong></p>
-<p>The requested page could not be found.</p>
+<p>A sidechain is an independent blockchain whose native currency is pegged to the value of another blockchain currency automatically by using proofs of payment. There is a two-way peg when two currencies can be exchanged freely, automatically, and without incurring in a price negotiation. In RSK, the Smart Bitcoin (RBTC) is two-way pegged to the BTC.</p>
+
+<p>In practice, when BTC are exchanged for RBTC, no currency is “transferred” between blockchains in a single transaction. When a transfer occurs, some BTCs are locked in Bitcoin and the same amount of RBTC is unlocked in RSK. When RBTC needs to be converted back into BTC, the RBTC get locked again in RSK and the same amount of BTC are unlocked in Bitcoin.</p>
+
+<p>Fully trust-minimized and third-party-free two-way pegs can be created if two platforms have Turing-complete smart-contracts. But since Bitcoin does not currently support smart-contracts nor native opcodes to validate external SPV proofs, part of the two-way peg system in RSK requires trust on a set of a semi-trusted third-party (STTP), that we collectively call the Federation. No single STTP can control the locked BTCs, but only a majority of them has the ability to release BTC funds. Each STTP has a key to protect the BTC that are locked, and upcon receiving commands from the RSK blockchain, it unlocks the BTC that need to be transferred back into Bitcoin. Note that if a user transfers BTC into RBTC and back, they will normally not receive bitcoins that are directly connected by UTXOs with the original BTC sent. Therefore, do not lock RBTC for specific users, but for the whole RSK network.</p>
+
+<p>The locking and unlocking of funds is done by the Federation without any human intervention. A requirement for being part of the Federation is the ability to audit the proper behavior of the software that powers the node, especially regarding the correctness of the component that decides on releasing BTC funds. RSK Labs developed a firmware for a Hardware Security Module (HSM) that STTPs can use, in order to provide maximum security for their private keys and, in the future, to be able to enforce a transaction validation protocol to further improve security.</p>
+
+<p>As of January 2019, the RSK Federation comprises 15 well-known, and highly-secure notaries. Leading Blockchain companies currently integrate the RSK Federation and participate in an autonomous protocol to securely lock Bitcoins. In exchange for their work, Federation members are awarded 1% of the transaction fees generated on RSK, in order to cover the hardware and maintenance costs. There is an automated process to modify the composition of the federation. Each federation member can either accept or reject a composition change. The process, which is infrequent, is commanded by a smart-contract, so it’s open to the public. The protocol has a consensus enforced delay of one week until the change is activated. This allows users to transfer the Bitcoins back to the Bitcoin network in case they do not trust the new Federation composition.</p>
+
+<p>If Bitcoin adds special opcodes or extensibility to validate SPV proofs as a hard-fork, and once the new system is proven to be secure and trust-free, the Federation role as STTPs will no longer be necessary, and the RSK community may implement the changes to adapt RSK to the trust-free system. The RSK community have also proposed a drivechain BIP, which enables miners to participate in the securing of the Bitcoins in the peg, and decreases the trust required on the STTPs even more.</p>
 
 
             </div>
