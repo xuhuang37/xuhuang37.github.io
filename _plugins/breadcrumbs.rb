@@ -73,10 +73,10 @@ module Jekyll
 end
 
 Jekyll::Hooks.register :site, :pre_render do |site, payload|
-   Jekyll::Breadcrumbs::loadConfig(site)
+  Jekyll::Breadcrumbs::loadConfig(site)
   Jekyll::Breadcrumbs::loadAddressCache(site)
 end
 
-Jekyll::Hooks.register [:pages, :documents, :site], :pre_render do |side, payload|
+Jekyll::Hooks.register [:pages, :documents], :pre_render do |side, payload|
   Jekyll::Breadcrumbs::buildSideBreadcrumbs(side, payload)
 end

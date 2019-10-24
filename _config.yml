@@ -16,6 +16,8 @@ domain: xuhuang37.github.io
 
 highlighter: rouge
 
+baseurl: xuhuang37.github.io
+
 plugins:
  - jekyll-last-modified-at
  - jekyll-feed
