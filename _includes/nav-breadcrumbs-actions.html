@@ -1,6 +1,5 @@
 <nav class="breadcrumbs bootstrap hidden-sm-down">
 	<ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
-		<span>{{ breadcrumbs }}</span>
 		{% for crumb in breadcrumbs %}
 		{% if forloop.last %}
 		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
@@ -20,7 +19,7 @@
 		{% assign count = breadcrumbs | size %}
 		{% if count == 0 %}
 		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-			<span property="name">RSK{{ breadcrumbs }}</span>
+			<span property="name">RSK</span>
 			<meta property="position" content="{{ crumb.position }}" />
 		</li>
 		{% endif %}
