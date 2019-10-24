@@ -33,8 +33,6 @@ module Jekyll
 
     def self.buildSideBreadcrumbs(side, payload)
       payload["breadcrumbs"] = []
-      return if side.url == @@siteAddress && root_hide === true
-
       drop = Jekyll::Drops::BreadcrumbItem
       position = 0
 
