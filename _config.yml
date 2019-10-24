@@ -4,6 +4,8 @@ description: >
 
 rss: rss
 
+source: ./
+
 breadcrumbs:
   root:
     hide: false
